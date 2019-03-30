@@ -47,7 +47,7 @@ public class Book_Controller {
     }
 
     // Delete all books
-    @DeleteMapping
+    @DeleteMapping("/books/delete")
     public ResponseEntity<String> deleteAllBooks() {
         bookRepo.deleteAll();
 

@@ -1,0 +1,9 @@
+<h1>Books Collection</h1>
+
+<div *ngFor="let book of books | async" style="width: 400px;">
+  <book-datas [book]='book'></book-datas>
+</div>
+
+<div>
+  <button type="button" class="button btn-danger" (click)='deleteBooks()'>Delete All</button>
+</div>
